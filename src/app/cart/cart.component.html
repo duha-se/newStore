@@ -1,0 +1,67 @@
+<!-- <app-sub-header [title]="'Cart'"></app-sub-header> -->
+<div class="ritekhana-wrapper">
+  <div class="ritekhana-main-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12" [ngSwitch]="cartPageIndex">
+          <p-steps [model]="pageLabels" [(activeIndex)]="cartPageIndex" [readonly]="true"></p-steps>
+
+          <!-- <p-accordion [(activeIndex)]="cartPageIndex">
+          <p-accordionTab header="{{'Meals_Cart' | translate}}" [disabled]="mealCartDisabled"> -->
+          <div *ngSwitchCase="cartCheckoutPages.MealsCart">
+            <button *ngIf="allMeals.length" pButton type="button" label="{{'Continue' | translate}}"
+              style="margin-right: .25em;" (click)="isLoggedIn()"></button>
+          </div>
+          <!-- <app-meals-summary></app-meals-summary>
+              <button *ngIf="allMeals.length" pButton type="button" label="{{'Continue' | translate}}" style="margin-right: .25em" (click)="isLoggedIn()"></button> -->
+          <!-- </p-accordionTab>
+          <p-accordionTab header="{{'Destinations' | translate}}" [disabled]="destinationDisbaled"> -->
+          <div *ngSwitchCase="cartCheckoutPages.Destinations">
+            <button pButton type="button" label="{{'Back' | translate}}" style="margin-right: .25em"
+              (click)="navigate('MealCart')"></button>
+            <button *ngIf="allDestinations.length" pButton type="button" label="{{'Continue' | translate}}"
+              style="margin-right: .25em" (click)="navigate('MealPerDestination')"></button>
+          </div>
+          <!-- <app-destination-form></app-destination-form>
+            <button pButton type="button" label="{{'Back' | translate}}" style="margin-right: .25em" (click)="navigate('MealCart')"></button>
+            <button *ngIf="allDestinations.length" pButton type="button" label="{{'Continue' | translate}}" style="margin-right: .25em" (click)="navigate('OrderDist')"></button>
+          </p-accordionTab>
+          <p-accordionTab header="{{'Order_Distribution' | translate}}" [disabled]="orderDistDisabled"> -->
+          <div *ngSwitchCase="cartCheckoutPages.MealPerDestination">
+            <button pButton type="button" label="{{'Back' | translate}}" style="margin-right: .25em"
+              (click)="navigate('Destinations')"></button>
+            <button *ngIf="order.totalCost" pButton type="button" label="{{'Continue' | translate}}"
+              style="margin-right: .25em" (click)="navigate('OrderDist')"></button>
+          </div>
+          <div *ngSwitchCase="cartCheckoutPages.OrderDistribution">
+            <button pButton type="button" label="{{'Back' | translate}}" style="margin-right: .25em"
+              (click)="navigate('MealPerDestination')"></button>
+            <button *ngIf="order.totalCost" pButton type="button" label="{{'Continue' | translate}}"
+              style="margin-right: .25em" (click)="navigate('Payment')"></button>
+          </div>
+          <!-- <app-order-summary></app-order-summary>
+            <button pButton type="button" label="{{'Back' | translate}}" style="margin-right: .25em" (click)="navigate('Destinations')"></button>
+            <button *ngIf="order.totalCost" pButton type="button" label="{{'Continue' | translate}}" style="margin-right: .25em" (click)="navigate('Payment')"></button>
+          </p-accordionTab>
+          <p-accordionTab header="{{'Payment' | translate}}" [disabled]="paymentDisabled"> -->
+          <div *ngSwitchCase="cartCheckoutPages.Payment">
+            Payment
+            <button pButton type="button" label="{{'Back' | translate}}" style="margin-right: .25em"
+              (click)="navigate('OrderDist')"></button>
+            <button pButton type="button" label="{{'Submit_Order' | translate }}" style="margin-right: .25em"
+              (click)="submitOrder()"></button>
+          </div>
+          <!-- Payment
+          <button pButton type="button" label="{{'Back' | translate}}" style="margin-right: .25em" (click)="navigate('OrderDist')"></button>
+          <button pButton type="button" label="{{'Submit_Order' | translate }}" style="margin-right: .25em" (click)="submitOrder()"></button> -->
+          <!-- </p-accordionTab>
+      </p-accordion> -->
+        </div>
+
+        <p-dialog header="Login" [(visible)]="displayLoginDialog" [style]="{width: '50vw'}">
+          <app-login-page></app-login-page>
+        </p-dialog>
+      </div>
+    </div>
+  </div>
+</div>

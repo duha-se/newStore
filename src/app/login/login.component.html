@@ -1,0 +1,30 @@
+<!-- <div class="container">
+  <button class="loginBtn loginBtn--google" #googleLoginRef>{{ 'GOOGLE_LOGIN' | translate }}</button>
+  <BR><BR>
+  <button (click)="signInWithFB()" >{{ 'FB_LOGIN' | translate }}</button>
+</div> -->
+<!-- <li>
+  <a class="btn">
+    <i class="fas fa-facebook">Facebook</i>
+  </a>
+</li>
+<li>
+  <a class="btn">
+    <i class="fas fa-facebook">Facebook</i>
+  </a>
+</li> -->
+<li (click)="displayDialog()" *ngIf="!loggedIn"><a class="btn"><i class="fas fa-user px-1"></i>{{'Login' | translate}}</a></li>
+<li *ngIf="loggedIn" (click)="signOut()" ><a class="btn"><i class="fas fa-sign-out-alt"></i>{{'Log out' | translate}} {{user.name}}</a></li>
+<p-dialog header="{{'Login with' | translate}}" [(visible)]="display" styleClass="ritekhana-login-box-wrap ritekhana-login-box dialog-box" position="center" blockScroll="true">
+      <ul style="margin-left: 0;">
+        <li>
+          <!-- <a class="ritekhana-login-box-social-icon btn" (click)="signInWithFB()"><i class="fab fa-facebook-square"></i>Sign in  with Facebook</a> -->
+          <div class="google-btn ritekhana-login-box-social-icon" #googleLoginRef>
+            <div class="google-icon-wrapper">
+              <img class="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"/>
+            </div>
+            <a class="btn-text">Sign in with google</a>
+          </div>
+        </li>
+      </ul>
+</p-dialog>

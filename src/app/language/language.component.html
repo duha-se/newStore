@@ -1,0 +1,15 @@
+<!-- <div class="container always-top">
+    <img class="mx-1" src="../../assets/extra-images/english-flage.png" (click)="translate.use('en')">
+    <img class="mx-1" src="../../assets/extra-images/arabic-flage.png" (click)="translate.use('ar')">
+</div> -->
+<!-- <select class="language-selector">
+    <option><i class="fas fa-globe">English</i></option>
+    <option><i class="fas fa-globe">عربي</i></option>
+</select> -->
+<div class="dropdown" onclick="showLangs()" >
+    <a class="dropbtn btn"><i class="fas fa-globe px-1"></i>{{selectedLang}}<i class="fas fa-angle-down px-1"></i></a>
+    <div id="myDropdown" class="dropdown-content">
+      <a (click)="setLang('en')">English</a>
+      <a (click)="setLang('ar')">عربي</a>
+    </div>
+  </div>

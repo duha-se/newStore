@@ -1,0 +1,74 @@
+.avatar {
+    vertical-align: left;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+
+
+.card-group{
+    display: inline-block ;
+    /* position: absolute; */
+    /* margin-right:10%; */
+    /* left: 5%; */
+  }
+  .card{
+    border: 2px double black;
+    /* width: 20%; */
+  
+    display: inline-block;
+  }
+  .sidenavlist {
+    height: 100%;
+    /* width: 160px; */
+    position: fixed;
+    z-index: 1;
+    top: 15%;
+    left: 0;
+    color: white;
+    background-color: #353a40;
+    overflow-x: hidden;
+    padding-bottom: 10%;
+    padding-top: 3%;
+
+  }
+  
+  .sidenavlist a {
+    /* padding: 6px 8px 6px 16px; */
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+  }
+  
+  .sidenavlist a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* .main {
+    left: 17%;
+    /* margin-left: 20%; 
+  } */
+  
+  @media screen and (max-height: 450px) {
+    .sidenavlist {padding-top: 15px;}
+    .sidenavlist a {font-size: 18px;}
+  }
+  .sidenavCart{
+    height: 100%;
+    width: 30%;
+    position: fixed;
+    z-index: 1;
+    top: 15%;
+    border:2px white;
+    right: 0;
+    /* padding-left: 10%; */
+    color: white;
+    background-color: #353a40;
+    overflow-x: hidden;
+    padding-bottom: 10%;
+    padding-top: 3%;
+  }
+  
+  

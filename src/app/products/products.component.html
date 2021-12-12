@@ -1,0 +1,615 @@
+<app-header></app-header>
+<br><br><br><br><br>
+<!-- <mat-action-list class="lis float-left">
+  
+     <a mat-list-item  style="color: black;" class="btn" (click)="getOne(1)">
+        <img matListAvatar src="../../assets/images/Vegetableslogo-r.png" class="avatar" alt="Hi">&nbsp;&nbsp; 
+         Vegetables</a> 
+   <a mat-list-item  style="color: black;" class="btn" (click)="getOne(2)">
+            <img matListAvatar src="../../assets/images/Fruitslogo-r.png" class="avatar" alt="Hi">&nbsp;&nbsp; 
+            Fruits </a> 
+   <a mat-list-item  style="color: black;" class="btn" (click)="getOne(4)"> 
+            <img matListAvatar src="../../assets/images/BreadLogo-r.png" class="avatar" alt="Hi">&nbsp;&nbsp; 
+            Bread </a>   
+   <a mat-list-item  style=" color: black;" class="btn" (click)="getOne(7)"> 
+        <img matListAvatar src="../../assets/images/milklogo.gif" class="avatar" alt="Hi">&nbsp;&nbsp; 
+        Milk and Dairy products </a>           
+   <a mat-list-item  style="color: black;" class="btn" (click)="getOne(6)"> 
+        <img matListAvatar src="../../assets/images/Canned_logo-r.png" class="avatar" alt="Hi">&nbsp;&nbsp;
+          Canned Food </a>   
+   <a mat-list-item  style="color: black;" class="btn" (click)="getOne(5)"> 
+        <img matListAvatar src="../../assets/images/snacklogo-r.png" class="avatar" alt="Hi">&nbsp;&nbsp; 
+        Snacks and Sweets </a>   
+   <a mat-list-item  style="color: black;" class="btn" (click)="getOne(3)"> 
+      <img matListAvatar src="../../assets/images/DrinksLogo.png" class="avatar" alt="Hi">&nbsp;&nbsp; 
+        Drinks </a>  
+        <a mat-list-item  style="color: black;" class="btn" (click)="getOne(8)">
+        <img  matListAvatar src="../../assets/images/Detergentslogo-r.png" class="avatar" alt="Hi">&nbsp;&nbsp; 
+        Detergents and Toilet </a>                  
+</mat-action-list>    -->
+<div class="sidenavlist">
+  <a mat-list-item style="color: white;" class="btn">
+    <img matListAvatar src="../../assets/images/Vegetableslogo-r.png" class="avatar" 
+      alt="Hi">&nbsp;&nbsp;
+    Vegetables</a>
+  <a mat-list-item style="color: white;" class="btn">
+    <img matListAvatar src="../../assets/images/Fruitslogo-r.png" class="avatar" 
+      alt="Hi">&nbsp;&nbsp;
+    Fruits </a>
+  <a mat-list-item style="color: white;" class="btn">
+    <img matListAvatar src="../../assets/images/BreadLogo-r.png" class="avatar"  alt="Hi">&nbsp;&nbsp;
+    Bread </a>
+  <a mat-list-item style=" color: white;" class="btn">
+    <img matListAvatar src="../../assets/images/milklogo.gif" class="avatar" 
+      alt="Hi">&nbsp;&nbsp;
+    Milk and Dairy products </a>
+  <a mat-list-item style="color: white;" class="btn">
+    <img matListAvatar src="../../assets/images/Canned_logo-r.png" class="avatar" 
+      alt="Hi">&nbsp;&nbsp;
+    Canned Food </a>
+  <a mat-list-item style="color: white;" class="btn">
+    <img matListAvatar src="../../assets/images/snacklogo-r.png" class="avatar" 
+      alt="Hi">&nbsp;&nbsp;
+    Snacks and Sweets </a>
+  <a mat-list-item style="color: white;" class="btn">
+    <img matListAvatar src="../../assets/images/DrinksLogo.png" class="avatar"  alt="Hi">&nbsp;&nbsp;
+    Drinks </a>
+  <!-- <a mat-list-item  style="color: white;" class="btn">
+    <img  matListAvatar src="../../assets/images/Detergentslogo-r.png" class="avatar" (click)="()" alt="Hi">&nbsp;&nbsp; 
+    Detergents and Toilet </a>   -->
+</div>
+
+<div class="col-sm-1 float-right sidenavCart" style="max-width: 25%;">
+  <div class="row">
+    <div class="cart-item col-6">
+      <!-- <span><img class="card-img-top" src="" width="50%" height="55%"></span>&nbsp;&nbsp; -->
+      <span></span>&nbsp;&nbsp;
+      <span></span>&nbsp;&nbsp;
+      <!-- <input type="button" class="btn btn-danger" value="Delete Item"> -->
+    </div>
+    <hr>
+    <div class="col-15">
+      <h1 style="color: aliceblue;">Total Price is : {{Sum()}}</h1>
+    </div>
+    <hr>
+    <input type="button" class="btn btn-danger" value="Clear All" (click)="clear()">
+  </div>
+</div>
+<!-- ----------------------------------------------------------------------------------------------->
+ <!-- <div style="margin-right: 20%; margin-left: 17%;">
+  <div [hidden]="isShowVeg">
+    <div *ngFor = "let i of myAllProducts"  class="card text-white bg-dark" style="width:30%;">
+      <div class="card-group mycard">
+        <img class="card-img-top" src="../../assets/prodc/{{i.img}}" width="50% " height="55%" value="img1">
+        <div class="card-body">
+          <h5 class="card-title " style=" text-align: center; font-size: larger; color: white;" value="item1">{{i.name}}
+          </h5>
+          <p class="card-text" style="font-size: larger; text-align: center; color: white;" value="price1">{{i.price}}₪ </p>
+          <a class="btn btn-success">Add To cart</a>
+        </div>
+      </div>
+    </div>
+    </div> 
+ </div> -->
+ <!-- ---------------------------- -->
+ <div style="margin-right: 20%; margin-left: 17%;">
+  <!-- <div [hidden]="isShowVeg"> -->
+    <div *ngFor = "let i of myAllProducts"  class="card text-white bg-dark" style="width:30%;">
+      <div class="card-group mycard">
+        <img class="card-img-top" src="../../assets/prodc/{{i.img}}" width="50% " height="55%" value="img1">
+        <div class="card-body">
+          <h5 class="card-title " style=" text-align: center; font-size: larger; color: white;" value="item1">{{i.prodcutName}}
+          </h5>
+          <p class="card-text" style="font-size: larger; text-align: center; color: white;" value="price1">{{i.price}}₪ </p>
+          <a class="btn btn-success">Add To cart</a>
+        </div>
+      </div>
+    </div> 
+ <!-- </div> -->
+ </div>
+    <!-- <div class="card text-white bg-dark" style="width:30%;">
+      <div class="card-group mycard">
+        <img class="card-img-top" src="../../assets/prodc/1-2.PNG" width="50%" height="55%">
+        <div class="card-body">
+          <h5 class="card-title " style=" text-align: center; font-size: larger; color: white;">Red cabbage</h5>
+          <p class="card-text" style="font-size: larger; text-align: center; color: white;"> 4₪ </p>
+          <a class="btn btn-success">Add To cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="card text-white bg-dark" style="width:30%;">
+      <div class="card-group mycard">
+        <img class="card-img-top" src="../../assets/prodc/1-3.PNG" width="50%" height="55%">
+        <div class="card-body">
+          <h5 class="card-title " style=" text-align: center; font-size: larger; color: white;">Lemon</h5>
+          <p class="card-text" style="font-size: larger; text-align: center; color: white;"> 2₪ </p>
+          <a class="btn btn-success">Add To cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="card text-white bg-dark" style="width:30%;">
+      <div class="card-group mycard">
+        <img class="card-img-top" src="../../assets/prodc/1-4.PNG" width="50%" height="55%">
+        <div class="card-body">
+          <h5 class="card-title " style=" text-align: center; font-size: larger; color: white;">Lettuce</h5>
+          <p class="card-text" style="font-size: larger; text-align: center; color: white;"> 5₪ </p>
+          <a class="btn btn-success">Add To cart</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div [hidden]="isShowFru">
+    <div class="card text-white bg-dark" style="width:30%;">
+      <div class="card-group mycard">
+        <img class="card-img-top" src="../../assets/prodc/2-1.PNG" width="50%" height="55%">
+        <div class="card-body">
+          <h5 class="card-title " style=" text-align: center; font-size: larger; color: white;">Peache</h5>
+          <p class="card-text" style="font-size: larger; text-align: center; color: white;"> 6₪ </p>
+          <a class="btn btn-success">Add To cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="card text-white bg-dark" style="width:30%;">
+      <div class="card-group mycard">
+        <img class="card-img-top" src="../../assets/prodc/2-2.png" width="50%" height="55%">
+        <div class="card-body">
+          <h5 class="card-title " style=" text-align: center; font-size: larger; color: white;">Pear</h5>
+          <p class="card-text" style="font-size: larger; text-align: center; color: white;"> 7₪ </p>
+          <a class="btn btn-success">Add To cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="card text-white bg-dark" style="width:30%;">
+      <div class="card-group mycard">
+        <img class="card-img-top" src="../../assets/prodc/2-3.PNG" width="50%" height="55%">
+        <div class="card-body">
+          <h5 class="card-title " style=" text-align: center; font-size: larger; color: white;">Baana</h5>
+          <p class="card-text" style="font-size: larger; text-align: center; color: white;"> 4₪ </p>
+          <a class="btn btn-success">Add To cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="card text-white bg-dark" style="width:30%;">
+      <div class="card-group mycard">
+        <img class="card-img-top" src="../../assets/prodc/2-4.PNG" width="50%" height="55%">
+        <div class="card-body">
+          <h5 class="card-title " style=" text-align: center; font-size: larger; color: white;">Orange</h5>
+          <p class="card-text" style="font-size: larger; text-align: center; color: white;"> 8₪ </p>
+          <a class="btn btn-success">Add To cart</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div [hidden]="isShowBread">
+    <div class="card text-white bg-dark" style="width:30%;">
+      <div class="card-group mycard">
+        <img class="card-img-top" src="../../assets/prodc/3-1.PNG" width="50%" height="55%">
+        <div class="card-body">
+          <h5 class="card-title " style=" text-align: center; font-size: larger; color: white;">Hot Dog Bun</h5>
+          <p class="card-text" style="font-size: larger; text-align: center; color: white;"> 15₪ </p>
+          <a class="btn btn-success">Add To cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="card text-white bg-dark" style="width:30%;">
+      <div class="card-group mycard">
+        <img class="card-img-top" src="../../assets/prodc/3-2.PNG" width="50%" height="55%">
+        <div class="card-body">
+          <h5 class="card-title " style=" text-align: center; font-size: larger; color: white;">Burger Bun</h5>
+          <p class="card-text" style="font-size: larger; text-align: center; color: white;">20₪ </p>
+          <a class="btn btn-success">Add To cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="card text-white bg-dark" style="width:30%;">
+      <div class="card-group mycard">
+        <img class="card-img-top" src="../../assets/prodc/3-3.PNG" width="50%" height="55%">
+        <div class="card-body">
+          <h5 class="card-title " style=" text-align: center; font-size: larger; color: white;">Slides of Breads</h5>
+          <p class="card-text" style="font-size: larger; text-align: center; color: white;"> 16₪ </p>
+          <a class="btn btn-success">Add To cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="card text-white bg-dark" style="width:30%;">
+      <div class="card-group mycard">
+        <img class="card-img-top" src="../../assets/prodc/3-4.PNG" width="50%" height="55%">
+        <div class="card-body">
+          <h5 class="card-title " style=" text-align: center; font-size: larger; color: white;">Fitness Legume crispy
+          </h5>
+          <p class="card-text" style="font-size: larger; text-align: center; color: white;"> 8₪ </p>
+          <a class="btn btn-success">Add To cart</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div [hidden]="isShowMilk">
+    <div class="card text-white bg-dark" style="width:30%;">
+      <div class="card-group mycard">
+        <img class="card-img-top" src="../../assets/prodc/4-1.PNG" width="50%" height="55%">
+        <div class="card-body">
+          <h5 class="card-title " style=" text-align: center; font-size: larger; color: white;">Milk 2L</h5>
+          <p class="card-text" style="font-size: larger; text-align: center; color: white;"> 15₪ </p>
+          <a class="btn btn-success">Add To cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="card text-white bg-dark" style="width:30%;">
+      <div class="card-group mycard">
+        <img class="card-img-top" src="../../assets/prodc/4-2.PNG" width="50%" height="55%">
+        <div class="card-body">
+          <h5 class="card-title " style=" text-align: center; font-size: larger; color: white;">Milk 1L</h5>
+          <p class="card-text" style="font-size: larger; text-align: center; color: white;">7.5₪ </p>
+          <a class="btn btn-success">Add To cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="card text-white bg-dark" style="width:30%;">
+      <div class="card-group mycard">
+        <img class="card-img-top" src="../../assets/prodc/4-3.PNG" width="50%" height="55%">
+        <div class="card-body">
+          <h5 class="card-title " style=" text-align: center; font-size: larger; color: white;">Shoko</h5>
+          <p class="card-text" style="font-size: larger; text-align: center; color: white;"> 5₪ </p>
+          <a class="btn btn-success">Add To cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="card text-white bg-dark" style="width:30%;">
+      <div class="card-group mycard">
+        <img class="card-img-top" src="../../assets/prodc/4-4.PNG" width="50%" height="55%">
+        <div class="card-body">
+          <h5 class="card-title " style=" text-align: center; font-size: larger; color: white;">Yogurt</h5>
+          <p class="card-text" style="font-size: larger; text-align: center; color: white;"> 3₪ </p>
+          <a class="btn btn-success">Add To cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="card text-white bg-dark" style="width:30%;">
+      <div class="card-group mycard">
+        <img class="card-img-top" src="../../assets/prodc/4-5.PNG" width="50%" height="55%">
+        <div class="card-body">
+          <h5 class="card-title " style=" text-align: center; font-size: larger; color: white;">Moca 1L</h5>
+          <p class="card-text" style="font-size: larger; text-align: center; color: white;"> 8₪ </p>
+          <a class="btn btn-success">Add To cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="card text-white bg-dark" style="width:30%;">
+      <div class="card-group mycard">
+        <img class="card-img-top" src="../../assets/prodc/4-6.PNG" width="50%" height="55%">
+        <div class="card-body">
+          <h5 class="card-title " style=" text-align: center; font-size: larger; color: white;">Banana 1L</h5>
+          <p class="card-text" style="font-size: larger; text-align: center; color: white;"> 8₪ </p>
+          <a class="btn btn-success">Add To cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="card text-white bg-dark" style="width:30%;">
+      <div class="card-group mycard">
+        <img class="card-img-top" src="../../assets/prodc/4-7.PNG" width="50%" height="55%">
+        <div class="card-body">
+          <h5 class="card-title " style=" text-align: center; font-size: larger; color: white;">Butter</h5>
+          <p class="card-text" style="font-size: larger; text-align: center; color: white;"> 6₪ </p>
+          <a class="btn btn-success">Add To cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="card text-white bg-dark" style="width:30%;">
+      <div class="card-group mycard">
+        <img class="card-img-top" src="../../assets/prodc/4-8.PNG" width="50%" height="55%">
+        <div class="card-body">
+          <h5 class="card-title " style=" text-align: center; font-size: larger; color: white;">Shredded Cheese</h5>
+          <p class="card-text" style="font-size: larger; text-align: center; color: white;"> 18₪ </p>
+          <a class="btn btn-success">Add To cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="card text-white bg-dark" style="width:30%;">
+      <div class="card-group mycard">
+        <img class="card-img-top" src="../../assets/prodc/4-9.PNG" width="50%" height="55%">
+        <div class="card-body">
+          <h5 class="card-title " style=" text-align: center; font-size: larger; color: white;">Sliced Cheese</h5>
+          <p class="card-text" style="font-size: larger; text-align: center; color: white;"> 16₪ </p>
+          <a class="btn btn-success">Add To cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="card text-white bg-dark" style="width:30%;">
+      <div class="card-group mycard">
+        <img class="card-img-top" src="../../assets/prodc/4-10.PNG" width="50%" height="55%">
+        <div class="card-body">
+          <h5 class="card-title " style=" text-align: center; font-size: larger; color: white;">Cheese</h5>
+          <p class="card-text" style="font-size: larger; text-align: center; color: white;"> 10₪ </p>
+          <a class="btn btn-success">Add To cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="card text-white bg-dark" style="width:30%;">
+      <div class="card-group mycard">
+        <img class="card-img-top" src="../../assets/prodc/4-11.PNG" width="50%" height="55%">
+        <div class="card-body">
+          <h5 class="card-title " style=" text-align: center; font-size: larger; color: white;">Activia strawberry Drink
+          </h5>
+          <p class="card-text" style="font-size: larger; text-align: center; color: white;"> 6₪ </p>
+          <a class="btn btn-success">Add To cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="card text-white bg-dark" style="width:30%;">
+      <div class="card-group mycard">
+        <img class="card-img-top" src="../../assets/prodc/4-12.PNG" width="50%" height="55%">
+        <div class="card-body">
+          <h5 class="card-title " style=" text-align: center; font-size: larger; color: white;">Activia drink with peach
+          </h5>
+          <p class="card-text" style="font-size: larger; text-align: center; color: white;"> 6₪ </p>
+          <a class="btn btn-success">Add To cart</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div [hidden]="isShowCanned">
+    <div class="card text-white bg-dark" style="width:30%;">
+      <div class="card-group mycard">
+        <img class="card-img-top" src="../../assets/prodc/5-1.PNG" width="50%" height="55%">
+        <div class="card-body">
+          <h5 class="card-title " style=" text-align: center; font-size: larger; color: white;">Canned Corn</h5>
+          <p class="card-text" style="font-size: larger; text-align: center; color: white;">6₪ </p>
+          <a class="btn btn-success">Add To cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="card text-white bg-dark" style="width:30%;">
+      <div class="card-group mycard">
+        <img class="card-img-top" src="../../assets/prodc/5-2.PNG" width="50%" height="55%">
+        <div class="card-body">
+          <h5 class="card-title " style=" text-align: center; font-size: larger; color: white;">Chopped Green Olives
+          </h5>
+          <p class="card-text" style="font-size: larger; text-align: center; color: white;">7₪ </p>
+          <a class="btn btn-success">Add To cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="card text-white bg-dark" style="width:30%;">
+      <div class="card-group mycard">
+        <img class="card-img-top" src="../../assets/prodc/5-3.PNG" width="50%" height="55%">
+        <div class="card-body">
+          <h5 class="card-title " style=" text-align: center; font-size: larger; color: white;"> Black Olives</h5>
+          <p class="card-text" style="font-size: larger; text-align: center; color: white;"> 5₪ </p>
+          <a class="btn btn-success">Add To cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="card text-white bg-dark" style="width:30%;">
+      <div class="card-group mycard">
+        <img class="card-img-top" src="../../assets/prodc/5-4.PNG" width="50%" height="55%">
+        <div class="card-body">
+          <h5 class="card-title " style=" text-align: center; font-size: larger; color: white;">Tomato Paste</h5>
+          <p class="card-text" style="font-size: larger; text-align: center; color: white;"> 9₪ </p>
+          <a class="btn btn-success">Add To cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="card text-white bg-dark" style="width:30%;">
+      <div class="card-group mycard">
+        <img class="card-img-top" src="../../assets/prodc/5-5.PNG" width="50%" height="55%">
+        <div class="card-body">
+          <h5 class="card-title " style=" text-align: center; font-size: larger; color: white;">Cut Pineapple</h5>
+          <p class="card-text" style="font-size: larger; text-align: center; color: white;"> 11₪ </p>
+          <a class="btn btn-success">Add To cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="card text-white bg-dark" style="width:30%;">
+      <div class="card-group mycard">
+        <img class="card-img-top" src="../../assets/prodc/5-6.PNG" width="50%" height="55%">
+        <div class="card-body">
+          <h5 class="card-title " style=" text-align: center; font-size: larger; color: white;">Mushroom</h5>
+          <p class="card-text" style="font-size: larger; text-align: center; color: white;"> 7₪ </p>
+          <a class="btn btn-success">Add To cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="card text-white bg-dark" style="width:30%;">
+      <div class="card-group mycard">
+        <img class="card-img-top" src="../../assets/prodc/5-7.PNG" width="50%" height="55%">
+        <div class="card-body">
+          <h5 class="card-title " style=" text-align: center; font-size: larger; color: white;">Pickled Cucumber</h5>
+          <p class="card-text" style="font-size: larger; text-align: center; color: white;"> 6₪ </p>
+          <a class="btn btn-success">Add To cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="card text-white bg-dark" style="width:30%;">
+      <div class="card-group mycard">
+        <img class="card-img-top" src="../../assets/prodc/5-8.PNG" width="50%" height="55%">
+        <div class="card-body">
+          <h5 class="card-title " style=" text-align: center; font-size: larger; color: white;">Canned Tuna</h5>
+          <p class="card-text" style="font-size: larger; text-align: center; color: white;"> 5₪ </p>
+          <a class="btn btn-success">Add To cart</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div [hidden]="isShowSnacks">
+    <div class="card text-white bg-dark" style="width:30%;">
+      <div class="card-group mycard">
+        <img class="card-img-top" src="../../assets/prodc/6-1.PNG" width="50%" height="55%">
+        <div class="card-body">
+          <h5 class="card-title " style=" text-align: center; font-size: larger; color: white;">Bamba</h5>
+          <p class="card-text" style="font-size: larger; text-align: center; color: white;">3₪ </p>
+          <a class="btn btn-success">Add To cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="card text-white bg-dark" style="width:30%;">
+      <div class="card-group mycard">
+        <img class="card-img-top" src="../../assets/prodc/6-2.PNG" width="50%" height="55%">
+        <div class="card-body">
+          <h5 class="card-title " style=" text-align: center; font-size: larger; color: white;">Beasley Grill</h5>
+          <p class="card-text" style="font-size: larger; text-align: center; color: white;">7₪ </p>
+          <a class="btn btn-success">Add To cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="card text-white bg-dark" style="width:30%;">
+      <div class="card-group mycard">
+        <img class="card-img-top" src="../../assets/prodc/6-3.PNG" width="50%" height="55%">
+        <div class="card-body">
+          <h5 class="card-title " style=" text-align: center; font-size: larger; color: white;">Beasley Barbecue</h5>
+          <p class="card-text" style="font-size: larger; text-align: center; color: white;"> 5₪ </p>
+          <a class="btn btn-success">Add To cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="card text-white bg-dark" style="width:30%;">
+      <div class="card-group mycard">
+        <img class="card-img-top" src="../../assets/prodc/6-4.PNG" width="50%" height="55%">
+        <div class="card-body">
+          <h5 class="card-title " style=" text-align: center; font-size: larger; color: white;">Natural-tasting potato
+            chips</h5>
+          <p class="card-text" style="font-size: larger; text-align: center; color: white;"> 4₪ </p>
+          <a class="btn btn-success">Add To cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="card text-white bg-dark" style="width:30%;">
+      <div class="card-group mycard">
+        <img class="card-img-top" src="../../assets/prodc/6-5.PNG" width="50%" height="55%">
+        <div class="card-body">
+          <h5 class="card-title " style=" text-align: center; font-size: larger; color: white;">Chips</h5>
+          <p class="card-text" style="font-size: larger; text-align: center; color: white;"> 6₪ </p>
+          <a class="btn btn-success">Add To cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="card text-white bg-dark" style="width:30%;">
+      <div class="card-group mycard">
+        <img class="card-img-top" src="../../assets/prodc/6-6.PNG" width="50%" height="55%">
+        <div class="card-body">
+          <h5 class="card-title " style=" text-align: center; font-size: larger; color: white;">chocolate</h5>
+          <p class="card-text" style="font-size: larger; text-align: center; color: white;"> 7₪ </p>
+          <a class="btn btn-success">Add To cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="card text-white bg-dark" style="width:30%;">
+      <div class="card-group mycard">
+        <img class="card-img-top" src="../../assets/prodc/6-7.PNG" width="50%" height="55%">
+        <div class="card-body">
+          <h5 class="card-title " style=" text-align: center; font-size: larger; color: white;">chocolate</h5>
+          <p class="card-text" style="font-size: larger; text-align: center; color: white;"> 8₪ </p>
+          <a class="btn btn-success">Add To cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="card text-white bg-dark" style="width:30%;">
+      <div class="card-group mycard">
+        <img class="card-img-top" src="../../assets/prodc/6-8.PNG" width="50%" height="55%">
+        <div class="card-body">
+          <h5 class="card-title " style=" text-align: center; font-size: larger; color: white;">chocolate</h5>
+          <p class="card-text" style="font-size: larger; text-align: center; color: white;"> 20₪ </p>
+          <a class="btn btn-success">Add To cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="card text-white bg-dark" style="width:30%;">
+      <div class="card-group mycard">
+        <img class="card-img-top" src="../../assets/prodc/6-9.PNG" width="50%" height="55%">
+        <div class="card-body">
+          <h5 class="card-title " style=" text-align: center; font-size: larger; color: white;">Barbecue Pringles</h5>
+          <p class="card-text" style="font-size: larger; text-align: center; color: white;"> 5₪ </p>
+          <a class="btn btn-success">Add To cart</a>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <div [hidden]="isShowDrinks">
+    <div class="card text-white bg-dark" style="width:30%;">
+      <div class="card-group mycard">
+        <img class="card-img-top" src="../../assets/prodc/7-1.PNG" width="50%" height="55%">
+        <div class="card-body">
+          <h5 class="card-title " style=" text-align: center; font-size: larger; color: white;">Water</h5>
+          <p class="card-text" style="font-size: larger; text-align: center; color: white;">10₪ </p>
+          <a class="btn btn-success">Add To cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="card text-white bg-dark" style="width:30%;">
+      <div class="card-group mycard">
+        <img class="card-img-top" src="../../assets/prodc/7-2.PNG" width="50%" height="55%">
+        <div class="card-body">
+          <h5 class="card-title " style=" text-align: center; font-size: larger; color: #f7f7f7;">Schweppes</h5>
+          <p class="card-text" style="font-size: larger; text-align: center; color: white;">10₪ </p>
+          <a class="btn btn-success">Add To cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="card text-white bg-dark" style="width:30%;">
+      <div class="card-group mycard">
+        <img class="card-img-top" src="../../assets/prodc/7-3.PNG" width="50%" height="55%">
+        <div class="card-body">
+          <h5 class="card-title " style=" text-align: center; font-size: larger; color: white;">Sprite</h5>
+          <p class="card-text" style="font-size: larger; text-align: center; color: white;"> 8₪ </p>
+          <a class="btn btn-success">Add To cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="card text-white bg-dark" style="width:30%;">
+      <div class="card-group mycard">
+        <img class="card-img-top" src="../../assets/prodc/7-4.PNG" width="50%" height="55%">
+        <div class="card-body">
+          <h5 class="card-title " style=" text-align: center; font-size: larger; color: white;">Juice</h5>
+          <p class="card-text" style="font-size: larger; text-align: center; color: white;"> 4₪ </p>
+          <a class="btn btn-success">Add To cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="card text-white bg-dark" style="width:30%;">
+      <div class="card-group mycard">
+        <img class="card-img-top" src="../../assets/prodc/7-5.PNG" width="50%" height="55%">
+        <div class="card-body">
+          <h5 class="card-title " style=" text-align: center; font-size: larger; color: white;">Coca Cola</h5>
+          <p class="card-text" style="font-size: larger; text-align: center; color: white;"> 8₪ </p>
+          <a class="btn btn-success">Add To cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="card text-white bg-dark" style="width:30%;">
+      <div class="card-group mycard">
+        <img class="card-img-top" src="../../assets/prodc/7-6.PNG" width="50%" height="55%">
+        <div class="card-body">
+          <h5 class="card-title " style=" text-align: center; font-size: larger; color: white;">Ice Tea</h5>
+          <p class="card-text" style="font-size: larger; text-align: center; color: white;"> 7₪ </p>
+          <a class="btn btn-success">Add To cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="card text-white bg-dark" style="width:30%;">
+      <div class="card-group mycard">
+        <img class="card-img-top" src="../../assets/prodc/7-7.PNG" width="50%" height="55%">
+        <div class="card-body">
+          <h5 class="card-title " style=" text-align: center; font-size: larger; color: white;">Juice</h5>
+          <p class="card-text" style="font-size: larger; text-align: center; color: white;"> 8₪ </p>
+          <a class="btn btn-success">Add To cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="card text-white bg-dark" style="width:30%;">
+      <div class="card-group mycard">
+        <img class="card-img-top" src="../../assets/prodc/7-8.PNG" width="50%" height="55%">
+        <div class="card-body">
+          <h5 class="card-title " style=" text-align: center; font-size: larger; color: white;">Juice</h5>
+          <p class="card-text" style="font-size: larger; text-align: center; color: white;"> 10₪ </p>
+          <a class="btn btn-success">Add To cart</a>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+<app-footer></app-footer>

@@ -1,0 +1,127 @@
+/*	Media 768Px Start */
+@media (min-width: 768px) and (max-width: 1024px) {
+	.ritekhana-header-one { position: static; float: left; width: 100%; background-color: #222; }
+	#main-nav { position: absolute; left: 0px; top: 100%; min-width: 230px; z-index: 9999; }
+	.ritekhana-menu-link { display: inline-block; }
+	#main-nav { display: none; } .sm-blue { background: #ffffff; }
+	.ritekhana-navigation,.ritekhana-navigation .sm-blue li.megamenu-wrap { position: relative; }
+	.ritekhana-navigation .ritekhana-megamenu [class*="col-md-"] { flex: 0 0 100%; max-width: 100%; width: 100%; }
+	.ritekhana-navigation .ritekhana-megamenu { float: left; background-color: #fff !important; position: relative; z-index: 9; padding: 10px 10px !important; }
+	
+	.ritekhana-header-btn { margin-top: 0px; }
+	.ritekhana-user-section li { padding-top: 5px; }
+
+	/* Main Grid */
+	.ritekhana-main-content .col-md-4,.ritekhana-main-content .col-md-3,
+	.ritekhana-main-content .ritekhana-column-3,.ritekhana-main-content .ritekhana-column-4 { float: none; display: inline-block; vertical-align: top; margin-right: -4px; width: 50%; flex: 0 0 50%;
+    max-width: 50%; }
+	.ritekhana-main-content .col-md-7,.ritekhana-main-content .col-md-5,.ritekhana-main-content .col-md-6,
+	.ritekhana-main-content .ritekhana-column-7,.ritekhana-main-content .ritekhana-column-5,.ritekhana-main-content .ritekhana-column-6 { width: 100%; float: left; flex: 0 0 100%; max-width: 100%; }
+	.col-md-12,.ritekhana-main-content .col-md-8,.ritekhana-main-content .col-md-9,
+	.ritekhana-column-12,.ritekhana-main-content .ritekhana-column-8,.ritekhana-main-content .ritekhana-column-9 { float: left; width: 100%; max-width: 100%; flex: auto; }
+
+	/* Content */
+	.ritekhana-banner-caption-view1 form ul li { width: 33.333%; }
+	.ritekhana-banner-caption-view1 h1,.ritekhana-banner-caption-view1 span { display: none; }
+	.ritekhana-subheader-view1 { padding: 50px 0px 50px 0px; }
+	.ritekhana-subheader-view1 .ritekhana-banner-caption-view1 form ul li { width: 50%; }
+	.ritekhana-subheader-view2 { padding-top: 40px; }
+	.ritekhana-subheader-view2 figure { margin-bottom: 40px; width: 100%; }
+	.ritekhana-subheader-view2-right { position: static; float: left; width: 100%; }
+	.ritekhana-subheader-view2 figcaption span { color: #ffffff; }
+	.ritekhana-dashboard-nav:before { display: none; }
+	.ritekhana-recet-order-list,.ritekhana-opening-hours-table { overflow: scroll; } .ritekhana-recet-order-list table,.ritekhana-opening-hours-table table { width: 900px; }
+	.ritekhana-breadcrumb { top: 0; }
+
+
+	/* Footer */
+	.ritekhana-footer-widget .widget { flex: 0 0 50%; max-width: 50%; }
+	.ritekhana-copyright { text-align: center; }
+	.ritekhana-copyright p { width: 100%; margin-bottom: 15px; }
+	.ritekhana-footer-social { display: inline-block; float: none; }
+
+	
+}
+
+/* Media 420Px Start */
+@media (max-width: 767px) {
+	.ritekhana-header-one { position: static; float: left; width: 100%; background-color: #222; }
+	#main-nav { position: absolute; left: 0px; top: 100%; min-width: 230px; z-index: 9999; }
+	.ritekhana-menu-link { display: inline-block; }
+	#main-nav { display: none; } .sm-blue { background: #ffffff; }
+	.ritekhana-navigation,.ritekhana-navigation .sm-blue li.megamenu-wrap { position: relative; }
+	.ritekhana-navigation .ritekhana-megamenu [class*="col-md-"] { flex: 0 0 100%; max-width: 100%; width: 100%; }
+	.ritekhana-navigation .ritekhana-megamenu { float: left; background-color: #fff !important; position: relative; z-index: 9; padding: 10px 10px !important; }
+	.ritekhana-logo { width: 100%; margin-right: 0px; text-align: center; margin-bottom: 20px; }
+
+	/* Main Grid */
+	.ritekhana-main-content .col-md-4,.ritekhana-main-content .col-md-3,
+	.ritekhana-main-content .ritekhana-column-4,.ritekhana-main-content .ritekhana-column-3 { float: none; display: inline-block; vertical-align: top; margin-right: -4px; width: 50%; flex: 0 0 50%; max-width: 50%; }
+	.ritekhana-main-content .col-md-7,.ritekhana-main-content .col-md-5,.ritekhana-main-content .col-md-6,
+	.ritekhana-main-content .ritekhana-column-7,.ritekhana-main-content .ritekhana-column-5,.ritekhana-main-content .ritekhana-column-6 { width: 100%; float: left; flex: 0 0 100%; max-width: 100%; }
+	.col-md-12,.ritekhana-main-content .col-md-8,.ritekhana-main-content .col-md-9,
+	.ritekhana-column-12,.ritekhana-main-content .ritekhana-column-8,.ritekhana-main-content .ritekhana-column-9 { float: left; width: 100%; max-width: 100%; flex: auto; }
+	
+	/* Content */
+	.ritekhana-banner-caption-view1 { display: none; }
+	.ritekhana-browse-dishes-links ul li { width: 50%; }
+	.ritekhana-resturant-view1 figure,.ritekhana-listing-style1 figure { width: 100%; }
+	.ritekhana-resturant-view1 figure ~ .ritekhana-resturant-view1-text,.ritekhana-listing-style1 figure ~ .ritekhana-listing-style1-text { margin-left: 0px; float: left; width: 100%; }
+	.ritekhana-subheader-view1 { padding: 50px 0px 50px 0px; }
+	.ritekhana-subheader-view1 .ritekhana-banner-caption-view1 form ul li { width: 100%; }
+	.ritekhana-listing-style1 figure { padding: 40px 0px; }
+	.ritekhana-subheader-view2 { padding-top: 40px; }
+	.ritekhana-subheader-view2 figure { margin-bottom: 40px; width: 100%; }
+	.ritekhana-subheader-view2-right { position: static; float: left; width: 100%; }
+	.ritekhana-subheader-view2 figcaption span { color: #ffffff; }
+	.ritekhana-subheader-view2 figure .ritekhana-subheader-view2-thumb ~ figcaption,
+	.ritekhana-resturant-reviews figure ~ .ritekhana-resturant-reviews-text,.ritekhana-dashboard-cover figure > span ~ figcaption { margin-left: 0px; float: left; width: 100%; }
+	.ritekhana-resturant-reviews figure ~ .ritekhana-resturant-reviews-text { margin-top: 15px; }
+	.comment-list figure ~ .text-holder { margin-left: 0px; float: left; width: 100%; margin-top: 15px; }
+	.comment-list .children { padding-left: 0px; }
+	.ritekhana-dashboard-nav:before { display: none; }
+	.ritekhana-recet-order-list,.ritekhana-opening-hours-table { overflow: scroll; } .ritekhana-recet-order-list table,.ritekhana-opening-hours-table table { width: 900px; }
+	.ritekhana-dashboard-right .ritekhana-select-view2 { margin-top: 10px; }
+	.ritekhana-right-padd { padding-right: 15px; }
+	.ritekhana-login-box,.ritekhana-result-form { width: 100%; }
+	.ritekhana-subheader-view1 h1 { font-size: 40px; }
+	.ritekhana-myorders-list figure > a ~ figcaption { margin-left: 0px; float: left; width: 100%; }
+	.ritekhana-myorders-list-title,.ritekhana-myorders-list figure > a,.ritekhana-account-packages-list ul li { width: 100%; }
+	.ritekhana-left-padd { padding-left: 15px; }
+	.ritekhana-account-packages { padding-left: 0px; padding-right: 0px; }
+
+	/* Footer */
+	.ritekhana-footer-widget .widget { flex: 0 0 50%; max-width: 50%; }
+	.ritekhana-copyright { text-align: center; }
+	.ritekhana-copyright p { width: 100%; margin-bottom: 15px; }
+	.ritekhana-footer-social { display: inline-block; float: none; }
+
+
+}
+
+/* Media 300Px Start */
+@media (max-width: 540px) {
+	.ritekhana-header-btn { padding: 9px 13px 9px 13px; font-size: 12px; }
+	.ritekhana-user-section { width: 100%; text-align: center; } .ritekhana-user-section li { float: none; display: inline-block; }
+
+	/* Main Grid */
+	.ritekhana-main-content .col-md-4,.ritekhana-main-content .col-md-3,
+	.ritekhana-main-content .ritekhana-column-4,.ritekhana-main-content .ritekhana-column-3 { width: 100%; flex: 0 0 100%; max-width: 100%; }
+	
+	/* Content */
+	.ritekhana-erorr404 h3 { font-size: 100px; }
+	.ritekhana-breadcrumb { 
+		margin-left: 0px;
+		top: 0;
+	}
+	.ritekhana-listing-style1-left, .ritekhana-listing-style1-right,.ritekhana-booking-form li,.comment-respond form p { width: 100%; }
+
+	/* Footer */
+	.ritekhana-footer-widget .widget { flex: 0 0 100%; max-width: 100%; }
+
+}
+
+/* Media 940Px Start */
+@media screen and (min-width: 991px) and (max-width: 1054px) {
+	
+}

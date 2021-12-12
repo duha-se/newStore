@@ -1,0 +1,25 @@
+/* .ui-accordion-header:not(.ui-state-disabled).ui-state-active a {
+    background-color: #ee7560 !important;
+    border: 1px solid #007ad9;
+    color: #ffffff;
+}
+.ui-button {
+    margin: 0;
+    color: #ffffff;
+    background-color: #ee7560;
+    border: 1px solid #007ad9;
+    font-size: 14px;
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+.container { 
+    margin-top: 10%;
+} */
+
+button {
+  background-color: #ee7560;
+  border: none;
+}
+
+.ui-button:enabled:hover{
+    background-color: #f04d30;
+}

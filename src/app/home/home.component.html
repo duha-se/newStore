@@ -1,0 +1,163 @@
+<app-header></app-header>
+<br><br><br>
+    <!-- ***** Preloader Start ***** -->
+    <!-- <div id="js-preloader" class="js-preloader">
+      <div class="preloader-inner">
+        <span class="dot"></span>
+        <div class="dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div> -->
+    <!-- ***** Preloader End ***** -->
+
+    <!-- ***** Main Banner Area Start ***** -->
+    <div class="main-banner" id="top">
+        <video autoplay muted loop id="bg-video">
+            <source src="assets/images/video.mp4" type="video/mp4" />
+        </video>
+
+        <div class="video-overlay header-text">
+            <div class="caption">               
+                <h2>Best <em>Store </em>in Town</h2>
+                <br>
+                <div class="main-button">
+                    <a  class="btn" [routerLink]="['/contact']">Contact US</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Main Banner Area End ***** -->
+
+   <!-- ***** Cars Starts ***** -->
+    <section class="section" id="trainers">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="section-heading">
+                        <h2>Our <em>Super Market</em></h2>
+                        <img src="assets/images/line-dec.png" alt="">
+                        <p>Just for you to make your life easy Buy everything you want just by click a button</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="trainer-item">
+                        <div class="image-thumb">
+                            <img src="assets/images/product-4-720x480.jpg" alt="">
+                        </div>
+                        <div class="down-content">
+                            <h4>Make a wonderful breakfast for your family</h4>
+
+                            <p>Using our fresh Bread and delicious Cheese and other fresh products</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="trainer-item">
+                        <div class="image-thumb">
+                            <img src="assets/images/product-5-720x480.jpg" alt="">
+                        </div>
+                        <div class="down-content">
+                            
+                            <h4>Fresh Vegetables From the Farm directly to your Home.</h4>
+
+                            <p>Make healthy dishes from these fresh Vegetables .</p>
+
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-button text-center">
+                <a class="btn" [routerLink]="['/prod']">View Our Products</a>
+            </div>
+            <br>
+
+            
+        </div>
+    </section>
+    <!-- ***** Cars Ends ***** -->
+
+    <section class="section section-bg" id="schedule" style="background-image: url(assets/images/sup.jpg)">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="section-heading dark-bg">
+                        <h2>Read <em>About Us</em></h2>
+                        <img src="assets/images/line-dec.png" alt="">
+                        <p>Duha Store makes online grocery delivery and grocery shopping fast and easy. Order the best of seasonal farm fresh food, great local finds,
+                            quick meal solutions, incredible new products and exclusives, and all of your favorite grocery brands.  </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="cta-content text-center">
+                        <p>It's supermarket delivery with so much more: 
+                            from Fresh Deals that help you save big to convenient delivery windows that work around your schedule, </p>
+
+                        <p>we've thought of everything to make grocery home delivery simple for you.
+                             We're a grocery delivery service you can trust as we source only the highest-quality products and deliver them directly to your door.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+<br> 
+<section class="section" id="our-classes">
+    <div class="container">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="section-heading dark-bg">
+        <img src="assets/images/line-dec.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="tabs">
+          <div class="col-lg-4">
+            <ul>
+              <li><strong>Two Weeks Free Delivery With DeliveryPass Trail.</strong></li>
+              <div class="main-rounded-button"><a class="btn" [routerLink]="['/prod']">Start Shopping</a></div>
+            </ul>
+          </div>
+          <div class="col-lg-8">
+            <section class='tabs-content'>
+              <article id='tabs-1'>
+                <img src="../../assets/images/dlv.jpg" alt="">
+                
+                <p>From <i class="fa fa-calendar"></i> 25.03.2021 &nbsp;To &nbsp; <i class="fa fa-calendar"></i> 08.04.2021  &nbsp;
+                                   
+              </article>
+              
+              
+            </section>
+          </div>
+        </div>
+    </div>
+</section>
+    <!-- ***** Call to Action Start ***** -->
+    <section class="section section-bg" id="call-to-action" style="background-image: url(assets/images/fr.jpg)">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="cta-content">
+                        <h2>Send us a <em>message</em></h2>
+                        <p>We're Here to listen to your suggestion and opinion.</p>
+                        <div class="main-button">
+                            <a class="btn" [routerLink]="['/contact']">Contact US</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>  
+
+<app-footer></app-footer>

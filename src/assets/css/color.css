@@ -1,0 +1,60 @@
+/*------------------------------------------------------------------
+
+Project:    	RiteKhana Food Bakery
+Version:    	0.1
+Primary use:    Food Bakery
+ThemeColor: 	Red, Black
+-------------------------------------------------------------------*/
+/* ThemeColor One */
+
+.ritekhana-color,.ritekhana-colorhover:hover,.ritekhana-resturant-view1-tags a:hover,li:hover .ritekhana-resturant-view1-btn,.ritekhana-resturant-viewall a:hover,
+.ritekhana-browse-dishes-links ul li a:before,.ritekhana-browse-dishes-links ul li:hover a,.ritekhana-parallax-view1-btn:hover,.widget_links ul li a:before,
+.widget_links ul li:hover a,.ritekhana-copyright p a,.ritekhana-back-top,/* Plugin */.ritekhana-listing-sortby-left li.active a,.ritekhana-listing-sortby-left li:hover a,.ritekhana-listing-style1-right a:hover,
+li:hover .ritekhana-listing-style1-text h2 a,li:hover .ritekhana-listing-style2-btn,li:hover .ritekhana-listing-style2-text h2 a,.ritekhana-subheader-view2-right a:hover,.ritekhana-listing-loadmore-btn a:hover,
+.ritekhana-dashboard-nav ul li.active a,.ritekhana-login-box input[type="submit"]:hover,li:hover .ritekhana-learn-btn,.widget_deals ul li:hover h6 a,.widget_popular_post ul li:hover h6 a,
+.comment-respond form p input[type="submit"],.comment-reply-link,.ritekhana-contact-form form input[type="submit"] {
+    color: #ee7560;
+}
+
+.ritekhana-bgcolor,.ritekhana-bgcolorhover:hover,.ritekhana-header-btn,.ritekhana-banner-caption-view1 form input[type="submit"],
+.ritekhana-resturant-gallery-view1 figure:hover > a:before,.ritekhana-footer-title h3:before,.ritekhana-footer-title h3:after,
+.ritekhana-footer-social li:hover a,.ritekhana-back-top:hover,
+.widget_cuisine_type input[type=radio]:not(old):checked +  label > span > span,
+.widget_cuisine_type input[type=radio]:not(old):checked +  label > span,.ritekhana-widget-title h2:before,.ritekhana-widget-title h2:after,
+.widget_cuisine_type ul li small,/* Plugin */.ritekhana-listing-sortby-right li.active a,.ritekhana-listing-sortby-right li:hover a,
+.ritekhana-pagination ul li.active a,.ritekhana-pagination ul li:hover a,.ritekhana-tab-style1 .nav a:hover,.ritekhana-tab-style1 .nav a.active,
+.ritekhana-filter-radio-view2 input[type=radio]:not(old):checked +  label > span > span,.ritekhana-filter-radio-view2 input[type=radio]:not(old):checked +  label > span,
+.ritekhana-upload-btn,.ritekhana-cat-button .selectize-control.multi .selectize-input > div:hover,.ritekhana-login-box input[type="submit"]:hover,
+.ritekhana-login-box input[type="checkbox"]:checked + label span,.ritekhana-login-box input[type="checkbox"] + label:hover span,.widget-heading:before,
+.widget_calendar thead > tr > th,.widget_tags a:hover,blockquote i,.ritekhana-tags > a:hover,.ritekhana-post-tags > a,.comment-respond form p input[type="submit"]:hover,
+.ritekhana-result-form form input[type="submit"],.ritekhana-contact-form form input[type="submit"]:hover,.ritekhana-service-icon:before,.ritekhana-pricetitle,
+.price-plan-btn,.ritekhana-modern-gallery figure > a:before {
+    background-color: #ee7560;
+}
+
+.ritekhana-border-color,.ritekhana-border-colorhover:hover,.ritekhana-header-btn,.ritekhana-banner-caption-view1 form input[type="submit"],
+.ritekhana-resturant-view1-btn,.ritekhana-resturant-viewall a,.ritekhana-parallax-view1-btn,
+.widget_cuisine_type input[type="radio"]:not(old) + label > span,/* Plugin */.ritekhana-subheader-view2-right a,.ritekhana-listing-loadmore-btn a,
+.ritekhana-filter-radio-view2 input[type="radio"]:not(old) + label > span,.ritekhana-login-box input[type="submit"],
+.ritekhana-login-box input[type="checkbox"]:checked + label span,.ritekhana-login-box input[type="checkbox"] + label:hover span,
+.comment-respond form p input[type="submit"],.ritekhana-contact-form form input[type="submit"] {
+    border-color: #ee7560 !important;
+}
+
+.ritekhana-resturant-view1 figure span:before,.ritekhana-testimonial-view1-inner:before,.ritekhana-listing-style3-text strong:before {
+	border-top-color: #ee7560 !important;
+}
+.ritekhana-listing-style1 figure span:before,.ritekhana-listing-style1 figure span:after,
+.ritekhana-listing-style2 figure span:before,.ritekhana-listing-style2 figure span:after {
+	border-bottom-color: #ee7560 !important;
+}
+
+
+
+
+
+.ritekhana-listing-style3-text span,.ritekhana-resturant-reviews figure figcaption span,
+.ritekhana-section-title,.ritekhana-baskit-cart-status-title,.ritekhana-listing-style2-text .ritekhana-listing-style2-title,
+.ritekhana-dashboard-cover-title,.ritekhana-dashboard-title span,.ritekhana-dashboard-section-title,.ritekhana-myorders-list-title {
+	font-family: 'Montserrat', sans-serif;
+}

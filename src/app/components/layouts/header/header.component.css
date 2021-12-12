@@ -1,0 +1,16 @@
+.subsection {
+    background-color:rgb(119, 119, 119); 
+    z-index: 3;
+    height: 40px;
+}
+
+.clicked {
+    background-color: #ee756056;
+}
+
+@media (max-width: 540px) {
+    .ritekhana-user-section {
+      width: 30%;
+      text-align: center;
+  }
+  }

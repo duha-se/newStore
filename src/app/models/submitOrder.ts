@@ -1,0 +1,8 @@
+import { OrderDestination } from './orderDestination';
+import { OrderPerson } from './orderPeron';
+
+export class Order{
+  id: string;
+  userDetails: OrderPerson;
+  destinations: OrderDestination[];
+}
